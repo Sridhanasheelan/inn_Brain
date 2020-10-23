@@ -1,0 +1,8 @@
+const userConstants = {
+
+    USER_SUCCESS: 'USERS_DATA_SUCCESS',
+    USER_FAILURE: 'USERS_DATA_FAILURE',
+    USER_ADDUPADATE: 'USERS_ADDUPADATE_SUCCES'
+};
+
+export { userConstants };

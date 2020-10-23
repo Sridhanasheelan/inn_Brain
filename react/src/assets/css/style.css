@@ -1,0 +1,211 @@
+table, th, td {
+  border: none;
+}
+
+table {
+  width: 100%;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table.striped tr {
+  border-bottom: none;
+}
+
+table.striped>tbody>tr:nth-child(odd) {
+  background-color: rgba(242, 242, 242, 0.5);
+}
+
+table.striped>tbody>tr>td {
+  border-radius: 0;
+}
+
+table.highlight>tbody>tr {
+  -webkit-transition: background-color .25s ease;
+  transition: background-color .25s ease;
+}
+
+table.highlight>tbody>tr:hover {
+  background-color: rgba(242, 242, 242, 0.5);
+}
+
+table.centered thead tr th, table.centered tbody tr td {
+  text-align: center;
+}
+
+tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+td, th {
+  padding: 15px 5px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+
+td {
+  outline: none;
+}
+
+@media only screen and (max-width: 992px) {
+  table.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    position: relative;
+    /* sort out borders */
+  }
+  table.responsive-table td:empty:before {
+    content: '\00a0';
+  }
+  table.responsive-table th, table.responsive-table td {
+    margin: 0;
+    vertical-align: top;
+  }
+  table.responsive-table th {
+    text-align: left;
+  }
+  table.responsive-table thead {
+    display: block;
+    float: left;
+  }
+  table.responsive-table thead tr {
+    display: block;
+    padding: 0 10px 0 0;
+  }
+  table.responsive-table thead tr th::before {
+    content: "\00a0";
+  }
+  table.responsive-table tbody {
+    display: block;
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  table.responsive-table tbody tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+  table.responsive-table th {
+    display: block;
+    text-align: right;
+  }
+  table.responsive-table td {
+    display: block;
+    min-height: 1.25em;
+    text-align: left;
+  }
+  table.responsive-table tr {
+    border-bottom: none;
+    padding: 0 10px;
+  }
+  table.responsive-table thead {
+    border: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+  }
+}
+
+.pagination li {
+  display: inline-block;
+  border-radius: 2px;
+  text-align: center;
+  vertical-align: top;
+  height: 30px;
+}
+
+.pagination li a {
+  color: #444;
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0 10px;
+  line-height: 30px;
+}
+
+.pagination li.active a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.pagination li.active {
+  background-color: grey;
+}
+
+.pagination li.disabled a {
+  cursor: default;
+  color: #999;
+}
+
+.pagination li i {
+  font-size: 2rem;
+}
+
+.pagination li.pages ul li {
+  display: inline-block;
+  float: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .pagination {
+    width: 100%;
+  }
+  .pagination li.prev, .pagination li.next {
+    width: 10%;
+  }
+  .pagination li.pages {
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.react-bootstrap-table-page-btns-ul {
+  float: right;
+  margin-top: -36px !important;
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  padding-top: 40px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+/* The Close Button */
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
